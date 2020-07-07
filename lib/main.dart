@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Question2',
-      home: DashboardScreen(),
+      home: LoginScreen(),
     ));
 
 class SplashScreen extends StatelessWidget {
@@ -91,6 +91,12 @@ class DashboardScreen extends StatelessWidget {
 class ErrorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Timer(
+      Duration(seconds: 2),
+      () {
+        Navigator.pop(context);
+      },
+    );
     return Scaffold(
       appBar: AppBar(title: Text('Login failed')),
       body: Column(

@@ -1,8 +1,12 @@
 Question (a):
-
-
+Flutter handles the navigation of screens like "stack" where on screen is set on another screen . 
+When we instantiate the navigations it uses as push or pop operation just like stack. 
+Pushing screen means puting a screen on top and popping means get rid of the screen of the top.
 
 Question (b):
 
+First we assign login screen as our home by home:LoginScreen().Then to navigate from login screen to loading screen the navigator.pushNamed() will put the loading screen 
+on top and in the loading screen. After showing the loading screen it will wait for the data and then 
+navigator.pushR() will replace the loading screen to SplashScreen.
 
 
