@@ -50,13 +50,23 @@ class LoginScreen extends StatelessWidget {
               heroTag: null,
               label: Text('If login fails'),
               backgroundColor: Colors.red,
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ErrorScreen()),
+                );
+              },
             ),
             FloatingActionButton.extended(
               heroTag: null,
               label: Text('If login succeeds'),
               backgroundColor: Colors.green,
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SplashScreen()),
+                );
+              },
             ),
           ],
         ),
