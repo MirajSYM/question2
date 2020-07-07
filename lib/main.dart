@@ -10,6 +10,15 @@ void main() => runApp(MaterialApp(
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Timer(
+      Duration(seconds: 5),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => DashboardScreen()),
+        );
+      },
+    );
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
